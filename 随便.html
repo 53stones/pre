@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            height: 45px;
+            border-top: 3px solid rgb(12, 221, 248);
+            background: rgb(237, 242, 237);
+            line-height: 45px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            display: inline-block;
+            color: black;
+            font-size: 14px;
+            text-decoration: none;
+            height: 45px;
+            padding: 0 20px;
+        }
+
+        .nav a:hover {
+            background-color: rgb(195, 147, 43);
+        }
+
+        body {
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .psize {
+            width: 500px;
+            /* 设置图片的宽度 */
+            height: 300px;
+            margin: 10px;
+            /* 添加一些外边距 */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <a href="https://www.shou.edu.cn"><img src="海洋组合.png" style="height:45px;"></a>
+        <a href="https://www.swu.edu.cn"><img src="西南组合.png" style="height:45px;"></a>
+        <a href="https://www.hainanu.edu.cn"><img src="海南组合.png" style="height:45px;"></a>
+        <a href="https://www.lzpuvt.edu.cn"><img src="兰州组合.png" style="height:45px;"></a>
+        <a href="https://www.wnu.edu.cn"><img src="渭师组合.png" style="height:45px;"></a>
+    </div>
+    <div class="slideshow-container">
+
+        <!-- Slides -->
+        <div class="slide fade">
+            <img class="psize" src="fj1.jpg" style="width:500px">
+            <div class="text"></div>
+        </div>
+
+        <div class="slide fade">
+            <img class="psize" src="fj2.jpg" style="width:500px">
+            <div class="text"></div>
+        </div>
+
+        <div class="slide fade">
+            <img class="psize" src="fj3.jpg" style="width:500px">
+            <div class="text"></div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
